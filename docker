@@ -1,0 +1,142 @@
+docker ps 
+
+show running containers
+
+docker ps -a 
+
+show all containers
+
+docker start containerid
+
+dokcer stop containerid
+
+docker rm containerid
+
+docker run -it tomcat 
+
+the above will take u to terminal inside container
+
+if u type exit, container will exit ,
+
+if u type ctrl+ p , ctrl+q , it will come out without stopping container
+
+
+docker -itd tomcat
+
+the above will run in detached mode , it runs the container
+
+it runs but not goes inside
+
+docker exec -it 90c bash
+
+docker run -it 90c bash 
+
+diff between both , in run if u type exit , ur container is destroyed , in exec mode if 
+
+u type exit , ur container is not destroyed
+
+
+in docker you specify the name our containers
+
+docker run -d --name=simpli-container tomcat:7 
+
+
+docker kill container id
+
+docker restart container id
+
+docker run -d centos 
+
+by daemon mode , u will not see container containing 
+
+and u cannot attach the container , since its not a interactive mode 
+
+if you want it back you have to go for interactive mode 
+
+---
+
+docker inspect 
+
+
+docker inspect containerid 
+
+
+for linux the gateway starts from 172.17.0.1
+
+172.17.0.2 --etc
+
+for windows the gateway starts from 192.168.99.100 
+
+while creating each container , it keeps on increasing  
+
+192.168.99.101 -- etc 
+
+
+docker rmi ( remove images ) 
+
+
+if u have a container associated ,it says it cannot be removed 
+
+
+we need to remove whatever is assocaited with it, then u can delete
+
+
+
+docker commit container id  image name
+
+
+
+ex:
+
+docker commit 094 sri
+
+this will create an image sri
+
+check with docker images ( this image will be assocaited with container 094
+
+
+image will always get created in layers 
+
+(-)
+(--)
+(---)
+
+check the size of image by docker images 
+
+
+centos - install apache server
+
+---
+
+yum -y install httpd
+
+after installing never use exit 
+
+use ctrl p , ctrl q 
+
+now docker commit containerid centos_http (new name-> image)
+
+
+docker run -itd -p 80:80 centos_httpd /usr/sbin/httpd -D foreground 
+
+
+docker run -itd -p 90:80 centos_httpd /usr/sbin/httpd -D foreground
+
+this time it runs on port 90
+
+docker network ls 
+
+ps -ef | grep docker
+
+we can 
+
+docker inspect bridge | more 
+
+docker inspect containerid 
+
+ 
+
+
+
+
+
