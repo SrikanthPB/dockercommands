@@ -153,6 +153,22 @@ docker inspect bridge | more
 
 docker inspect containerid
 
+while i am inside the container i can communicate with another container 
+
+outside i can communicate via docker host only 
+
+ex : create a container 1
+
+create container 2
+
+
+communicate between two containers
+
+ping ipaddres of container1
+
+ping ipaddress of container2
+
+
 
 
 
