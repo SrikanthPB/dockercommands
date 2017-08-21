@@ -147,7 +147,7 @@ ifconfig wil get confi of existing docktainer
 docker0 : 172.0.0.1
 
 in windows 192.168.80:101 for windwos
-we can 
+
 
 docker inspect bridge | more 
 
