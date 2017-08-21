@@ -38,7 +38,7 @@ u type exit , ur container is not destroyed
 
 in docker you specify the name our containers
 
-docker run -d --name=simpli-container tomcat:7 
+docker run -d --name=sample-container tomcat:7 
 
 
 docker kill container id
