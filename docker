@@ -128,7 +128,7 @@ docker volume
 
 it helps us to transfer the files from one image to another
 
-from this container : docker run -itd -v /home/edureka/scripts:/scripts ubuntu
+from my home folder to : docker run -itd -v /home/edureka/scripts:/scripts ubuntu
 
 
 -----------------
