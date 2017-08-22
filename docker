@@ -124,6 +124,12 @@ docker run -itd -p 90:80 centos_httpd /usr/sbin/httpd -D foreground
 
 this time it runs on port 90
 
+docker volume 
+
+it helps us to transfer the files from one image to another
+
+from this container : docker run -itd -v /home/edureka/scripts:/scripts ubuntu
+
 
 -----------------
 
