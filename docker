@@ -128,10 +128,16 @@ docker volume
 
 it helps us to transfer the files from one image to another
 
-from my home folder to : docker run -itd -v /home/edureka/scripts:/scripts ubuntu
+from my home folder to : docker run -itd -v /home/edu/scripts:/scripts ubuntu
 
 
 -----------------
+to remove all container following is the command
+
+# Delete all containers
+docker rm $(docker ps -a -q)
+# Delete all images
+docker rmi $(docker images -q)
 
 
 docker network ls 
