@@ -168,6 +168,14 @@ ping ipaddres of container1
 
 ping ipaddress of container2
 
+docker port containerid 90 
+
+cannot publish 
+
+docker port containerid (which has already exposed) 90
+
+
+
 
 
 
