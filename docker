@@ -194,6 +194,14 @@ docker create -v/tmp --name datacontainer ubuntu
 
 docker run -it --volumes-from datacontainer ubuntu /bin/bash
 
+ex docker run -d -v /home/srikanth/files:/var/log/nginx centos
+
+the above command will link volume between host and container 
+
+any writes on host will be automatically reflected in container and vice versa
+
+
+
 
 
 
