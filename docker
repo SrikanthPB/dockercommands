@@ -200,6 +200,24 @@ the above command will link volume between host and container
 
 any writes on host will be automatically reflected in container and vice versa
 
+lets create one volume
+
+docker volume create --name DataVolume1
+
+DataVolume1
+
+docker run -ti --rm -v DataVolume1:/datavolume1 ubuntu
+
+echo "Example1" > /datavolume1/Example1.txt
+
+exit
+
+docker volume inspect DataVolume1
+
+docker run --rm -ti -v DataVolume1:/datavolume1 ubuntu
+
+cat /datavolume1/Example1.txt
+
 
 
 
