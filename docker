@@ -190,7 +190,11 @@ host:port always
 
 creating own volume 
 
-docker create -v /tmp ubuntu datacontainer
+docker create -v/tmp --name datacontainer ubuntu
+
+docker run -it --volumes-from datacontainer ubuntu /bin/bash
+
+
 
 
 
