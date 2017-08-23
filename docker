@@ -218,6 +218,12 @@ docker run --rm -ti -v DataVolume1:/datavolume1 ubuntu
 
 cat /datavolume1/Example1.txt
 
+between containers
+
+docker run -ti --name=Container4 -v SampleVolume:/SampleVolume ubuntu 
+
+docker run -ti --name=Container5 --volumes-from Container4 ubuntu
+
 
 
 
