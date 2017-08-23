@@ -188,6 +188,10 @@ docker port containerid (which has already exposed) 90
 
 host:port always 
 
+creating own volume 
+
+docker create -v /tmp ubuntu datacontainer
+
 
 
 
