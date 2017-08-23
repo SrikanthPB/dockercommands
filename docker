@@ -224,6 +224,9 @@ docker run -ti --name=Container4 -v SampleVolume:/SampleVolume ubuntu
 
 docker run -ti --name=Container5 --volumes-from Container4 ubuntu
 
+docker history ubuntu 
+
+lists out all the different soft we installed on this
 
 
 
